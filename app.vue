@@ -8,8 +8,8 @@
 body {
   @apply font-sans;
   @apply bg-primary;
+  @apply color-base;
 
-  color: white;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-variant-ligatures: none;
