@@ -1,12 +1,13 @@
 <template>
   <TheLayout>
-    <div bg-primary h-200dvh />
+    <NuxtPage />
   </TheLayout>
 </template>
 
 <style lang="scss">
 body {
   @apply font-sans;
+  @apply bg-primary;
 
   color: white;
   -moz-osx-font-smoothing: grayscale;
