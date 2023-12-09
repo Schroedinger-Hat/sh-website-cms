@@ -1,24 +1,33 @@
 <script setup lang="ts">
 const navEl = ref<HTMLElement | null>(null)
+const sidebarEl = ref<HTMLElement | null>(null)
 const { height } = useElementBounding(navEl)
+const { width } = useElementBounding(sidebarEl)
 </script>
 
 <template>
-  <main bg-primary text-white>
-    <TheNav ref="navEl" z-2 bg-primary />
-    <TheSidebar z-1 :nav-height="height" />
-    <div relative>
-      <div h-100vh bg-green-500 w-full />
-      <div h-100vh bg-red-500 w-full />
-      <div h-100vh bg-blue-500 w-full />
-      <div h-100vh bg-pink-500 w-full />
+  <main bg-primary>
+    <TheNav ref="navEl" class="nav" />
+    <TheSidebar ref="sidebarEl" class="sidebar" />
+    <div class="content">
+      <slot />
     </div>
     <NuxtPage />
   </main>
 </template>
 
 <style scoped lang="scss">
-.layout {
-  height: calc(100dvh - v-bind('navHeight'))
+.content {
+  max-width: v-bind('`calc(100vw - ${width}px)`');
+  margin-top: v-bind('`${height}px`');
+  margin-left: v-bind('`${width}px`');
+}
+
+.nav {
+  z-index: $z-nav;
+}
+
+.sidebar {
+  z-index: $z-sidebar;
 }
 </style>
