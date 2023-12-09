@@ -8,5 +8,6 @@ export default defineConfig({
   ],
   shortcuts: {
     'bg-primary': 'bg-[#1a1a1a]',
+    'border-base': 'border-gray:40',
   },
 })
