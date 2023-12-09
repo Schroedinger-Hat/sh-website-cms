@@ -36,7 +36,7 @@ const links = [
         :key="link.slug"
         :to="link.slug"
         :class=" $route.name === link.slug.slice(1)
-          ? 'bg-gray-500/30 hover:bg-gray-500/30 cursor-default'
+          ? 'bg-gray-500/30 color-white cursor-default'
           : 'hover:bg-gray-400:5'
         "
         flex="~ justify-start items-center"
