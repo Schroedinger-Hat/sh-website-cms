@@ -2,8 +2,8 @@
 
 const sassAdditionalData = () => {
   let additionalData = '@use "sass:math";'
-  additionalData += '@import "@/assets/scss/_utils.scss";'
-  additionalData += '@import "@/assets/scss/main.scss";'
+  additionalData += '@import "@/assets/styles/_utils.scss";'
+  additionalData += '@import "@/assets/styles/main.scss";'
   return additionalData
 }
 
@@ -22,4 +22,3 @@ export default defineNuxtConfig({
     },
   },
 })
-
