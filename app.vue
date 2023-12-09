@@ -1,3 +1,3 @@
 <template>
-  <SHWelcome />
+  <main bg-primary h-100dvh />
 </template>

@@ -6,4 +6,7 @@ export default defineConfig({
     presetAttributify(),
     presetWebFonts(),
   ],
+  shortcuts: {
+    'bg-primary': 'bg-[#1a1a1a]',
+  },
 })
