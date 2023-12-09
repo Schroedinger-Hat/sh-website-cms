@@ -1,5 +1,5 @@
 <template>
-  <h1 text-white>
+  <h1>
     Code of Conduct
   </h1>
 </template>
