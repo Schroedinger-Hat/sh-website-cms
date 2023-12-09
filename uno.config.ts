@@ -16,6 +16,8 @@ export default defineConfig({
   shortcuts: {
     'bg-primary': 'bg-[#1a1a1a]',
     'border-base': 'border-gray:40',
+    'color-base': 'text-gray-300',
+    'color-fade': 'text-gray-300:50',
   },
   transformers: [
     transformerDirectives(),
