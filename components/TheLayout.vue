@@ -12,7 +12,6 @@ const { width } = useElementBounding(sidebarEl)
     <div class="content">
       <slot />
     </div>
-    <NuxtPage />
   </main>
 </template>
 
