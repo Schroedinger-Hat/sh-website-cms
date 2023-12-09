@@ -6,6 +6,8 @@
 
 <style lang="scss">
 body {
+  @apply font-sans;
+
   color: white;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
