@@ -1,17 +1,3 @@
-<script setup lang="ts">
-defineProps<{
-  navHeight: number
-}>()
-</script>
-
 <template>
-  <aside class="aside" border-r border-base fixed left-0 bg-primary h-100dvh w-20>
-    {{ navHeight }}
-  </aside>
+  <aside class="aside" h-100dvh w-20 fixed left-0 border-r border-base bg-inherit />
 </template>
-
-<style scoped lang="scss">
-.aside {
-  top: 57px;
-}
-</style>
