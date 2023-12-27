@@ -9,7 +9,7 @@ const sassAdditionalData = () => {
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@unocss/nuxt', '@vueuse/nuxt', 'nuxt-vitest', 'nuxt-svgo', 'nuxt-icon'],
+  modules: ['@unocss/nuxt', '@vueuse/nuxt', '@nuxt/test-utils/module', 'nuxt-svgo', 'nuxt-icon'],
   css: ['@unocss/reset/tailwind.css'],
   svgo: {
     defaultImport: 'component',
