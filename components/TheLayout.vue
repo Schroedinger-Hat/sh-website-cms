@@ -1,7 +1,6 @@
 <script setup lang="ts">
 const navEl = ref<HTMLElement | null>(null)
 const sidebarEl = ref<HTMLElement | null>(null)
-const { height } = useElementBounding(navEl)
 const { width } = useElementBounding(sidebarEl)
 </script>
 
@@ -18,8 +17,7 @@ const { width } = useElementBounding(sidebarEl)
 <style scoped lang="scss">
 .content {
   max-width: v-bind('`calc(100vw - ${width}px)`');
-  margin-top: v-bind('`${height}px`');
-  margin-left: v-bind('`${width}px`');
+  padding-left: v-bind('`${width}px`');
 }
 
 .nav {
