@@ -6,7 +6,7 @@ const ORG_URL = 'https://github.com/Schrodinger-Hat/'
 </script>
 
 <template>
-  <header flex="~ justify-between items-center" w-full p-3 fixed top-0 left-0 border-b border-base bg-inherit>
+  <header flex="~ justify-between items-center" w-full p-3 sticky top-0 left-0 border-b border-base bg-inherit>
     <NuxtLink :to="ORG_URL" target="_blank">
       <SHLogo w-8 h-8 />
     </NuxtLink>
