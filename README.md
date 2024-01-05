@@ -1,5 +1,5 @@
 <div align='center'>
-  
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
@@ -11,7 +11,7 @@
 <br />
 <div align="center">
   <h1>Schrödinger Hat Nuxt Template</h1>
-  
+
   <a href="https://github.com/Schrodinger-Hat/template">
     <img src="assets/svg/sh-logo.svg" alt="Logo" width="80" height="80">
   </a>
@@ -61,13 +61,11 @@ In this project, the technologies utilized are:
 - [Typescript](https://www.typescriptlang.org/)
 - [Vue3](https://vuejs.org/)
 
-
 Nuxt modules utilized:
 - [Nuxt SVGO](https://nuxt.com/modules/nuxt-svgo)
 - [UnoCSS](https://nuxt.com/modules/unocss)
 - [Vitest](https://nuxt.com/modules/vitest)
 - [VueUse](https://nuxt.com/modules/vueuse)
-
 
 ## Usage
 
@@ -88,7 +86,7 @@ Don't forget to give the project a star! Thanks again!
 
 ## Contact
 
-Schrodinger's Hat Team - [@schrodinger_hat](mailto:schrodinger.hat.show@gmail.com)
+Schrödinger's Hat Team - [@schrodinger_hat](mailto:schrodinger.hat.show@gmail.com)
 
 Project Link: [Schrödinger Hat Nuxt template](https://github.com/Schrodinger-Hat/sh-nuxt-template)
 
@@ -103,4 +101,3 @@ Project Link: [Schrödinger Hat Nuxt template](https://github.com/Schrodinger-Ha
 [stars-url]: https://github.com/Schrodinger-Hat/sh-nuxt-template/stargazers
 [issues-shield]: https://img.shields.io/github/issues/Schrodinger-Hat/sh-nuxt-template.svg?style=for-the-badge
 [issues-url]: https://github.com/Schrodinger-Hat/sh-nuxt-template/issues
-
