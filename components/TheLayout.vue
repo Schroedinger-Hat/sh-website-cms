@@ -2,12 +2,14 @@
 const navEl = ref<HTMLElement | null>(null)
 const sidebarEl = ref<HTMLElement | null>(null)
 const { width } = useElementBounding(sidebarEl)
+
+const showSidebar = ref(false)
 </script>
 
 <template>
-  <main bg-primary>
-    <TheNav ref="navEl" class="nav" />
-    <TheSidebar ref="sidebarEl" class="sidebar" />
+  <main bg-primary relative>
+    <TheNav ref="navEl" class="nav" @toggle-sidebar="showSidebar = !showSidebar" />
+    <TheSidebar ref="sidebarEl" class="sidebar" :show="showSidebar" />
     <div class="content">
       <slot />
     </div>
@@ -17,7 +19,10 @@ const { width } = useElementBounding(sidebarEl)
 <style scoped lang="scss">
 .content {
   max-width: v-bind('`calc(100vw - ${width}px)`');
-  padding-left: v-bind('`${width}px`');
+
+  @include breakpoint(md) {
+    padding-left: v-bind('`${width}px`');
+  }
 }
 
 .nav {
