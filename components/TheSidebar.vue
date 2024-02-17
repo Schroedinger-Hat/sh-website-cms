@@ -36,7 +36,7 @@ const links = [
   <aside
     class="aside"
     :class="{ 'translate-x-0': show, '-translate-x-full': !show }"
-    w="~ full md:max" h="~ full md:100dvh" p3 pos="absolute md:fixed left-0" transform="~ translate md:translate-x-none" transition-all border="~ base none md:solid md:r-1" bg-inherit
+    w="~ full md:max" h="~ full md:100dvh" p3 pos="absolute md:fixed left-0" transform="~ translate md:translate-x-none" transition-all border="~ base none md:solid md:r-1 md:t-none" bg-inherit
   >
     <nav class="nav" flex="~ col justify-start items-center" w-full h-full>
       <NuxtLink
