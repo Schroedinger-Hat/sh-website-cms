@@ -44,7 +44,8 @@ const links = [
         :class="$route.name === link.slug.slice(1)
           ? 'bg-gray-500/30 color-white cursor-default'
           : 'hover:bg-gray-400:5'
-        " flex="~ justify-start items-center" w-full mb1 p3 rounded-lg active:bg-gray-300:6
+        "
+        flex="~ justify-center md:justify-start items-center" w-full mb1 p3 rounded-lg active:bg-gray-300:6 text-center
       >
         <Icon :name="link.icon" mr2 />
         <span capitalize>
